@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 .background-home {
   background-image: url(img/background-home.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

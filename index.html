@@ -15,7 +15,7 @@
     <title>Barbearia Sullivan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="estilos.css" rel="stylesheet" />
-    <script defer src="js/app,js"></script>
+    <script defer src="app.js"></script>
   </head>
 
   <body>
@@ -68,18 +68,5 @@
       </div>
     </main>
     <footer></footer>
-
-    <script>
-      function Menu(e) {
-        let list = document.querySelector("ul");
-        e.name === "menu"
-          ? ((e.name = "close"),
-            list.classList.add("top-[35px]"),
-            list.classList.add("opacity-100"))
-          : ((e.name = "menu"),
-            list.classList.remove("top-[35px]"),
-            list.classList.remove("opacity-100"));
-      }
-    </script>
   </body>
 </html>
