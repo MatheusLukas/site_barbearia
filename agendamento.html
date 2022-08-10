@@ -14,21 +14,22 @@
     ></script>
     <title>Barbearia Sullivan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="estilos.css" rel="stylesheet" />
+    <link href="estilos.css" rel="stylesheet"/>
     <script defer src="app.js"></script>
+    <script defer src="esconder_div.js"></script>
   </head>
 
   <body>
     <div class="background-home">
-      <nav class="bg-black">
+      <nav class="bg-white">
         <div class="md:flex md:items-center md:justify-between">
           <div class="flex justify-between items-center">
-            <span class="text-2x1 cursor-pointer">
-              <img class="h-10 inline ml-[30px]" src="img/logo.svg" />
-              Sullivan
+            <span class="text-2x1 cursor-pointer text-black">
+              <img class=" h-10 inline ml-[30px]" src="img/logo.svg" />
+              Sullivan BarberShop
             </span>
 
-            <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
+            <span class="text-3x1 cursor-pointer mx-2 md:hidden block" style="color: black;">
               <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
           </div>
@@ -55,17 +56,32 @@
           </ul>
         </div>
       </nav>
+      <div class="bg-black w-[1200PX] h-[800px] container1"></div>
       <div
         class="flex flex-col justify-center items-center gap-[50px] mt-[110px]"
       >
         <img src="img/Logo_agendamento.svg" class="w-[350px]" />
 
         <button
-          class="border rounded-full p-2 w-[150px] hover:bg-white hover:scale-110 font-bold"
+          class="border rounded-full p-2 w-[150px] hover:bg-white hover:scale-110 font-bold" id="botao"
         >
           Agende aqui
         </button>
       </div>
     </div>
+
+
+
+    
+
+    </div>
+
+
+
+
+
+
+
+
   </body>
 </html>
