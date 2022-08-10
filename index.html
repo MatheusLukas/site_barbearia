@@ -21,39 +21,48 @@
   <body>
     <div class="background-home">
       <header>
-        <nav class="bg-white">
-          <div class="md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center">
-              <span class="text-2x1 cursor-pointer">
-                <img class="h-10 inline" src="img/logo.jpg" />
-                Sullivan
-              </span>
+        <div class="background-home">
+          <nav class="bg-black">
+            <div class="md:flex md:items-center md:justify-between">
+              <div class="flex justify-between items-center">
+                <span class="text-2x1 cursor-pointer">
+                  <img class="h-10 inline ml-[30px]" src="img/logo.svg" />
+                  Sullivan
+                </span>
 
-              <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-              </span>
+                <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
+                  <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+              </div>
+              <ul
+                class="md:flex md:items-center z-[1] md:z-auto md:static bg-white absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+              >
+                <li class="mx-4 my-6 md:my-0">
+                  <a
+                    href="index.html"
+                    class="text-x1 hover:opacity-60 duration-500"
+                    >Início</a
+                  >
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                  <a href="#" class="text-x1 hover:opacity-60 duration-500"
+                    >Portifólio</a
+                  >
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                  <a
+                    href="agendamento.html"
+                    class="text-x1 hover:opacity-60 duration-500"
+                    >Agendamento</a
+                  >
+                </li>
+              </ul>
             </div>
-            <ul
-              class="md:flex md:items-center z-[1] md:z-auto md:static bg-white absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
-            >
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-x1 hover:opacity-60 duration-500"
-                  >Início</a
-                >
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-x1 hover:opacity-60 duration-500"
-                  >Portifólio</a
-                >
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-x1 hover:opacity-60 duration-500"
-                  >Agendamento</a
-                >
-              </li>
-            </ul>
+          </nav>
+          <div class="flex justify-center items-center mt-[110px]">
+            <img src="img/Logo_inicial.svg" class="w-[400px]" />
           </div>
-        </nav>
+        </div>
       </header>
     </div>
 

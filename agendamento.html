@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Barbearia Sullivan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="estilos.css" rel="stylesheet" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="background-home">
+      <nav class="bg-black">
+        <div class="md:flex md:items-center md:justify-between">
+          <div class="flex justify-between items-center">
+            <span class="text-2x1 cursor-pointer">
+              <img class="h-10 inline ml-[30px]" src="img/logo.svg" />
+              Sullivan
+            </span>
+
+            <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+          <ul
+            class="md:flex md:items-center z-[1] md:z-auto md:static bg-white absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+          >
+            <li class="mx-4 my-6 md:my-0">
+              <a href="index.html" class="text-x1 hover:opacity-60 duration-500"
+                >Início</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-x1 hover:opacity-60 duration-500"
+                >Portifólio</a
+              >
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a
+                href="agendamento.html"
+                class="text-x1 hover:opacity-60 duration-500"
+                >Agendamento</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="flex flex-col justify-center items-center gap-[50px] mt-[110px]"
+      >
+        <img src="img/Logo_agendamento.svg" class="w-[350px]" />
+
+        <button
+          class="border rounded-full p-2 w-[150px] hover:bg-white hover:scale-110 font-bold"
+        >
+          Agende aqui
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
