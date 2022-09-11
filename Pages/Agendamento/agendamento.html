@@ -15,9 +15,10 @@
     ></script>
     <title>Barbearia Sullivan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="estilos.css" rel="stylesheet"/>
-    <script defer src="app.js"></script>
-    <script defer src="mostrar_modal.js"></script>
+    <link href="../../estilos.css" rel="stylesheet"/>
+    <link href="../../img">
+    <script type="module" defer src="app.js"></script>
+   
   </head>
 
   <body>
@@ -31,14 +32,14 @@
             </span>
 
             <span class="text-3x1 cursor-pointer mx-2 md:hidden block" style="color: black;">
-              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              <ion-icon class="menu" name="menu"></ion-icon>
             </span>
           </div>
           <ul
             class="md:flex md:items-center z-[1] md:z-auto md:static bg-white absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
           >
             <li class="mx-4 my-6 md:my-0">
-              <a href="index.html" class="text-x1 hover:opacity-60 duration-500"
+              <a href="../Home/index.html" class="text-x1 hover:opacity-60 duration-500"
                 >Início</a
               >
             </li>
@@ -49,7 +50,7 @@
             </li>
             <li class="mx-4 my-6 md:my-0">
               <a
-                href="agendamento.html"
+                href="../Agendamento/agendamento.html"
                 class="text-x1 hover:opacity-60 duration-500"
                 >Agendamento</a
               >
@@ -68,8 +69,10 @@
           
         >
           Agende aqui
+          
         </button>
       </div>
+
     </div>
 
 
@@ -87,8 +90,9 @@
       <div class="modal">
         <ion-icon name="close-outline" class="fechar"></ion-icon>
         <h1>Escolha a Data e Hora</h1>
-        <div id="show_date">  
-         <p> </p>
+
+        <div id="agendamento">  
+         <p id="show_date"> </p>
 
 
 

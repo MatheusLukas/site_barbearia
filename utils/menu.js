@@ -9,6 +9,4 @@ function Menu(e) {
       list.classList.remove("opacity-100"));
 }
 
-
-
-
+export default Menu;

@@ -1,7 +1,11 @@
+import getDate from "./date.js";
+
 function iniciaModal(modalID) {
   const modal = document.getElementById(modalID);
   if (modal) {
     modal.classList.add("mostrar");
+    let paragrafo = document.getElementById("show_date");
+    paragrafo.textContent = getDate();
     modal.addEventListener("click", (e) => {
       if (
         e.target.id == modalID ||
@@ -13,5 +17,5 @@ function iniciaModal(modalID) {
     });
   }
 }
-const botao = document.getElementById("botao");
-botao.addEventListener("click", () => iniciaModal("modal-agenda"));
+
+export default iniciaModal;
