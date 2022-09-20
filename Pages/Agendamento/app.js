@@ -1,5 +1,6 @@
 import iniciaModal from "../../utils/mostrar_modal.js";
 import Menu from "../../utils/menu.js";
+import { carousel } from "../../utils/carousel.js";
 
 //Modal
 
@@ -12,3 +13,7 @@ buttonModalScheduling.addEventListener("click", () =>
 
 let menuSandwich = document.querySelector(".menu");
 menuSandwich.addEventListener("click", () => Menu(menuSandwich));
+
+// Carousel
+
+carousel();
